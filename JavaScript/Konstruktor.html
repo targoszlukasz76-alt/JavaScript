@@ -1,0 +1,16 @@
+<script>
+function Enemy(speed, power) {
+    this.live = 3;
+    this.speed = speed;
+    this.power = power;
+    this.print = function() {
+        console.log(`Przeciwnik ma ${this.live} życia,
+        ${this.speed} szybkości i ${this.power} ataku`);
+    }
+}
+//tworzenie obiektów z użyciem konstruktora
+const enemy1 = new Enemy(3, 10);
+enemy1.print();
+const enemy2 = new Enemy(5, 15);
+enemy2.print();
+</script>

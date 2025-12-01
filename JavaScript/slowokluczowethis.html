@@ -1,0 +1,15 @@
+<script>
+const car = {
+	name: "Mercedes",
+	color: "czerowny",
+	drive() {
+		console.log(this); //car
+		console.log(`${this.name} sobie jedzie`);		
+	},
+	showText() {
+		console.log(`${this.name} koloru ${this.color}`);
+	}
+}
+car.drive(); //"Mercedes sobie jedzie"
+car.showText(); //"Mercedes koloru czerownego"
+</script>

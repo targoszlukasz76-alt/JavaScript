@@ -1,0 +1,26 @@
+<script>
+let liczba1=prompt('Podaj pierwszą liczbę');
+let liczba2=prompt('Podaj drugą liczbę');
+let operacja=prompt('Wybierz rodzaj operacji');
+switch( operacja ){
+	case '+':
+		wynik = liczba1 + liczba2;
+		break;
+	case '-':
+		wynik = liczba1 - liczba2;
+		break;
+	case '*':
+		wynik = liczba1 * liczba2;
+		break;
+	case '/':
+        if (liczba2 ==0) {
+            alert ('liczba pierwsza bądź druga jest zerem nie można wykonać działania');
+            break;
+        } else {
+            wynik = liczba1 / liczba2;
+            break;
+        }
+}
+document.write( 'wynik=' + wynik);
+</script>
+
